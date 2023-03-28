@@ -27,7 +27,17 @@
     <!-- intro with skills -->
 
     <section class="intro">
-        <p>Hi, I am Olga. I am a full stack web developer.</p>
+        
+        <p id="element"></p>
+
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+        <script> let typed = new Typed('#element', {
+            strings: ['Hi, I am Olga. I am a full stack web developer. Thank you for visiting my page.'],
+            typeSpeed: 100,
+            backSpeed: 100,    
+        });
+        </script>
         <div class="icons">
                     <div><img src="images/icons/javascript.png" class="icon"/></div>
                     <div><img src="images/icons/react.png" class="icon"/></div>
@@ -44,11 +54,48 @@
     <!-- projects gallery -->
 
     <section class="projects">
-<p>Projects display will be here</p>
+<div class="project_display">
+    <div class="project_display-item">
+        <div class="project_display-image">
+            <a href="https://restaurant-reservation-frontend-vfda.onrender.com"><img src="images/project1.png"/></a>
+        </div>
+        <div class="project_display-description">React | Node.js | Express | PostgreSQL | Javascript</div>
+        <p>
+            <a class="github-link" href="https://github.com/cvtqx/restaurant-reservation-system" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
+        </p>
+    </div>
+    <div class="project_display-item">
+        <div class="project_display-image">
+            <a href="https://restaurant-reservation-frontend-vfda.onrender.com"><img src="images/project1.png"/></a>
+        </div>
+        <div class="project_display-description">React | Node.js | Express | PostgreSQL | Javascript</div>
+        <p>
+            <a class="github-link" href="https://github.com/cvtqx/restaurant-reservation-system" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
+        </p>
+    </div>
+    <div class="project_display-item">
+        <div class="project_display-image">
+            <a href="https://restaurant-reservation-frontend-vfda.onrender.com"><img src="images/project1.png"/></a>
+        </div>
+        <div class="project_display-description">React | Node.js | Express | PostgreSQL | Javascript</div>
+        <p>
+            <a class="github-link" href="https://github.com/cvtqx/restaurant-reservation-system" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
+        </p>
+    </div>
+    <div class="project_display-item">
+        <div class="project_display-image">
+            <a href="https://restaurant-reservation-frontend-vfda.onrender.com"><img src="images/project1.png"/></a>
+        </div>
+        <div class="project_display-description">React | Node.js | Express | PostgreSQL | Javascript</div>
+        <p>
+            <a class="github-link" href="https://github.com/cvtqx/restaurant-reservation-system" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
+        </p>
+    </div>
+</div>
     </section>
 
    <!-- footer -->
-   
+
    <footer class="footer">
         <ul class="social_list">
             <li class="social_list__item">
