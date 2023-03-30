@@ -9,17 +9,16 @@
 :root{
 
     /* font family */
-    --ff-primary: 'Sono', sans-serif;
+    --ff-primary: 'Roboto', sans-serif;
     --ff-secondary: 'Shadows Into Light', cursive;
     /* font weight */
     --fw-reg: 300;
     --fw-bold: 1000;
     /* colors */
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #89B0AE;
-    --clr-extra: #FFD6BA;
-    --clr-gradient: #006d77;
+    --clr-light: #F5F0EC;
+    --clr-dark: #503B2A;
+    --clr-accent: #E3D5CA;
+    --clr-font: #b29ca2;
     /* font sizes */
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -35,15 +34,33 @@ html{
 
 body{
      text-align: center;
+     background-color: var(--clr-light);
+     font-family: var(--ff-primary);
+     font-size: var(--fs-body);
+     max-width: 1500px;
+     margin-left: auto;
+    margin-right: auto;
 }
 
 section{
-    padding: 5em 2em;
+    padding: 3em 2em;
+
 }
 
 img{
     display: block;
     max-width: 100%;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;    
+}
+
+a:hover{
+    font-weight: var(--fw-bold);
+    color: white;
 }
 
 /*  header */
@@ -55,22 +72,31 @@ header{
 
 .logo{
     width: 250px;
+    margin-top: 1em;  
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
 }
 
 .reach_out{
     margin-top: 1em;
     margin-right: 1em;
-    border: 1px solid;
+    border: 1px transparent;
     border-radius: 5px;
-    padding: 1em;
+    padding: 1em ;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--clr-light);
+    
+    
 }
 
-.reach_out a{
-    text-decoration: none;
-}
 
 .reach_out:hover{
-    background-color: red;
+    background-color: var(--clr-accent);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+#element{
+    font-size: var(--fs-h3);
 }
 
 
@@ -80,7 +106,7 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4em;
+    margin-bottom: 1em;
 }
 
 .icon{
@@ -89,33 +115,49 @@ header{
     padding: 5px;
 }
 
+.icon:hover{
+    transform: rotate(20deg);
+}
+
 /* projects */
+.projects h2{
+    padding-bottom: 2em;
+}
 
 .project_display{
     display: flex;
     flex-direction: column;
+    
 }
 
 .project_display-item{
     border-radius: 5px;
     margin-bottom: 2em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: #f5f0ec;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23e3d5ca' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");  
 }
 
 .project_display-image{
-    margin: 5em;
+    margin: 2em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     
 }
 
 .project_display-description{
     padding-bottom: 2em;
+    margin: 0 1em;
 }
 
 
 .project_display-image:hover{
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
     transform: translate3d(2px,2px,2px);
+}
+
+.project_display-title{
+    margin: 5em auto;
 }
 
 .github-link{
@@ -129,6 +171,11 @@ header{
     grid-template-columns: auto auto;
     grid-column-gap: 2em;
     grid-row-gap: 2em;
+   
+}
+
+.project_display-image{
+    margin: 5em;  
 }
 }
 
@@ -160,11 +207,63 @@ footer{
 }
 
 .social_list__item:hover{
-    color:red;
+    color:var(--clr-font);
 }
 
 .attribution{
     font-size: 15px;
     margin: 2em 0 0;
     padding: 0;
+}
+
+/* contact form */
+.contact-form{
+    background-color: var(--clr-accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.form {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f5f0ec;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23e3d5ca' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 600px){
+
+    .form{
+        max-width: 30em;       
+    }
+}
+
+input, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid var(--clr-font); 
+  border-radius: 4px; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+button{
+  background-color: var(--clr-font);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--clr-dark);
+}
+
+.form-header, .go_back{
+    margin: 2em;
 }
