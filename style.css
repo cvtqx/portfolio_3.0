@@ -34,12 +34,13 @@ html{
 
 body{
      text-align: center;
-     background-color: var(--clr-light);
+     background-color: var(--clr-accent);
+     color: var(--clr-dark);
      font-family: var(--ff-primary);
      font-size: var(--fs-body);
      max-width: 1500px;
      margin-left: auto;
-    margin-right: auto;
+     margin-right: auto;
 }
 
 section{
@@ -50,17 +51,19 @@ section{
 img{
     display: block;
     max-width: 100%;
-
+   
 }
+
+
 
 a{
     text-decoration: none;
     color: black;    
 }
 
-a:hover{
+a:hover, .social_list__item:hover{
     font-weight: var(--fw-bold);
-    color: white;
+    color: var(--clr-light);
 }
 
 /*  header */
@@ -84,7 +87,7 @@ header{
     padding: 1em ;
     text-align: center;
     justify-content: center;
-    background-color: var(--clr-light);
+    background-color: var(--clr-accent);
     
     
 }
@@ -93,6 +96,26 @@ header{
 .reach_out:hover{
     background-color: var(--clr-accent);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+/* intro */
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#memo{
+    color: red;
+    background-color: var(--clr-light);
+    text-transform: uppercase; 
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 500px;
+
 }
 
 #element{
@@ -110,7 +133,7 @@ header{
 }
 
 .icon{
-    max-height: 5em;
+    max-height: 3em;
     margin-top: 15px;
     padding: 5px;
 }
@@ -157,11 +180,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .project_display-title{
-    margin: 5em auto;
+    margin-top: 3em;
 }
 
 .github-link{
     text-decoration: none;
+}
+
+.github-link:hover{
+    color: var(--clr-font)
 }
 
 @media (min-width: 600px){
@@ -206,10 +233,6 @@ footer{
     padding: .5em;
 }
 
-.social_list__item:hover{
-    color:var(--clr-font);
-}
-
 .attribution{
     font-size: 15px;
     margin: 2em 0 0;
@@ -232,6 +255,10 @@ footer{
   background-color: #f5f0ec;
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23e3d5ca' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-header{
+    color: var(--clr-dark)
 }
 
 @media (min-width: 600px){
