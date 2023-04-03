@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact form</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
@@ -16,25 +16,24 @@
 
 <body class="contact-form">
    
-    <h2 class="form-header">Send me a message</h2>
-    <form class="form">
-        <div class="form-control">
-            <input type="text" id="name" name="name" placeholder="Your name"/>
-        </div>
-        <div class="form-control">
-             <input type="email" id="email" name="email" placeholder="Your email"/>
-        </div>
-        <div class="form-control">
-             <textarea type="text" id="message" name="message" cols="40" rows="10"></textarea>
-        </div>
-        <div class="form-control">
+    <h2 class="form-header">Get in touch with me</h2>
+    <form class="form" action="https://formsubmit.co/cvtqx@protonmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_autoresponse" value="Thank you for reaching out to me! I will get back to you as soon as I can.">
+            <input type="text" id="name" name="name" placeholder="Your name" required/>
+        
+             <input type="email" id="email" name="email" placeholder="Your email" required/>
+      
+        
+             <textarea type="text" id="message" name="message" cols="40" rows="10" required></textarea>
+       
             <button type="submit" id="send_button">Send
 
-            </button></div>        
+            </button>        
     </form>
     <div class="go_back">
         <a href="index.html">Go back</a>
     </div>
-    
+   
 </body>
 </html>
