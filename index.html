@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54d3a5939b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vara@1.4.0/lib/vara.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -30,18 +31,48 @@
     <!-- intro with skills -->
 
     <section class="intro">
-        <p id="memo">Please note that this page is currently under construction. The project part is completed and all the links are working. The email feature is disabled but if you want to send me a message <a href="mailto:cvtqx@protonmail.com" class="footer__link">click here</a></p>
-        <p id="element"></p>
+        <div id="greeting"></div>
+    
 
-        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+<script>
 
-        <script> let typed = new Typed('#element', {
-            strings: ['Hi, I am Olga. I am a full stack web developer. Thank you for visiting my page.'],
-            typeSpeed: 100,
-            backSpeed: 100,    
+    let vara = new Vara(
+        "#greeting",
+        "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Shadows-Into-Light/shadows-into-light.json",
+        [
+            {
+                    text: "Hello, my name is Olga. I am a full stack software developer",                   
+                    y: 20,                   
+                    duration:5000
+        },
+        
+        ],
+        {
+            strokeWidth: 3,
+            color:"#fff",           
+            textAlign: "center",
+            autoAnimation:true
+        }       
+    );
+    
+    vara.ready(function(){
+        let erase = true;
+        vara.animationEnd(function(i,o){
+            if(i == "no_erase") erase = false;
+            if(erase){
+                o.greeting.style.transition = "opacity 1s 1s";
+                o.greeting.style.opacity = 0;
+            }
         });
-        </script>
+
+    })
+   
+
+</script>
+       
+<h2>My skills</h2>
         <div class="icons">
+            
                     <div><img src="images/icons/javascript.png" class="icon"/></div>
                     <div><img src="images/icons/react.png" class="icon"/></div>
                     <div><img src="images/icons/nodejs.png" class="icon"/></div>

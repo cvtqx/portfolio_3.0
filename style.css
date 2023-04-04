@@ -108,21 +108,20 @@ header{
     justify-content: center;
 }
 
-#memo{
-    color: red;
-    background-color: var(--clr-light);
-    text-transform: uppercase; 
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 5px;
-    max-width: 500px;
-
+#greeting{
+   
+    margin-top: 2em;
+    margin-bottom: 5em;
+    width: 60vw;
+    height: auto;
+    overflow: hidden;
+    
+    
 }
-
-#element{
-    font-size: var(--fs-h3);
+#greeting svg{
+        width: 100%;
+        display: inline-block;        
 }
-
 
 .icons{
     display: flex;
@@ -141,6 +140,13 @@ header{
 
 .icon:hover{
     transform: rotate(20deg);
+}
+
+@media (min-width: 600px){
+    #greeting{
+        
+        
+    }
 }
 
 /* projects */
