@@ -93,8 +93,10 @@ header{
     padding: 1em ;
     text-align: center;
     justify-content: center;
-    background-color: var(--clr-accent);    
+    background-color: var(--clr-accent); 
+      
 }
+
 
 
 .reach_out:hover{
@@ -117,9 +119,8 @@ header{
     margin-bottom: 5em;
     width: 60vw;
     height: auto;
-    overflow:auto;
-    
-    
+    overflow: hidden;
+       
 }
 #greeting svg, #thankyounote svg{
         width: 100%;
@@ -178,10 +179,13 @@ header{
 .project_display-image{
     margin: 2em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-   
-        
+            
 }
 
+.project_display-image:hover{
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+    transform: translate3d(2px,2px,2px);
+}
 
 
 .project_display-description{
@@ -190,10 +194,7 @@ header{
 }
 
 
-.project_display-image:hover{
-    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
-    transform: translate3d(2px,2px,2px);
-}
+
 
 .project_display-title{
     margin-top: 3em;
@@ -218,7 +219,7 @@ header{
 }
 
 .project_display-image{
-    margin: 5em;  
+    margin: 5em; 
 }
 }
 
