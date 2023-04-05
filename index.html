@@ -21,7 +21,7 @@
 <body>
     <!-- header (logo+reach out button)-->
     <header>
-        <div class="logo">
+        <div class="logo" id="top">
           <img src="images/logo.png" alt="" />
         </div>
 
@@ -35,13 +35,19 @@
     
 
 <script>
+    let fontSize = 45;
+        if(window.screen.width < 600)
+            fontSize = 20;
+        else if(window.screen.width < 1000){
+            fontSize = 25;
+        }
 
     let vara = new Vara(
         "#greeting",
         "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Shadows-Into-Light/shadows-into-light.json",
         [
             {
-                    text: "Hello, my name is Olga. I am a full stack software developer",                   
+                    text: "Hello, my name is Olga. I am a full stack software developer.",                   
                     y: 20,                   
                     duration:5000
         },
@@ -49,7 +55,8 @@
         ],
         {
             strokeWidth: 3,
-            color:"#fff",           
+            color:"#fff",
+            fontSize: fontSize,           
             textAlign: "center",
             autoAnimation:true
         }       
@@ -153,6 +160,7 @@
         </p>
     </div>
 </div>
+<a href="#top">Back to top</a>
     </section>
 
    <!-- footer -->

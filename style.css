@@ -111,17 +111,17 @@ header{
     justify-content: center;
 }
 
-#greeting{
+#greeting, #thankyounote{
    
     margin-top: 2em;
     margin-bottom: 5em;
     width: 60vw;
     height: auto;
-    overflow: hidden;
+    overflow:auto;
     
     
 }
-#greeting svg{
+#greeting svg, #thankyounote svg{
         width: 100%;
             
 }
