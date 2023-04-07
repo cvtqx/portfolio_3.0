@@ -85,6 +85,10 @@ header{
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  */
 }
 
+.logo:hover{
+    transform:rotate(5deg);
+}
+
 .reach_out{
     margin-top: 1em;
     margin-right: 1em;
@@ -96,6 +100,9 @@ header{
     background-color: var(--clr-accent); 
       
 }
+
+
+/* greeting */
 
 
 
@@ -148,12 +155,12 @@ header{
     transform: rotate(20deg);
 }
 
-@media (min-width: 600px){
+/* @media (min-width: 600px){
     #greeting{
         
         
     }
-}
+} */
 
 /* projects */
 .projects h2{
@@ -214,11 +221,11 @@ header{
     color: var(--clr-font)
 }
 
-@media (min-width: 500px){
+@media (min-width: 600px){
 
 .project_display{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, auto);
     grid-column-gap: 2em;
     grid-row-gap: 2em;
    
@@ -281,7 +288,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 
-@media (min-width: 600px){
+@media (min-width: 500px){
 
     .form{
         max-width: 30em;       
