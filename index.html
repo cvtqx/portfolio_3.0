@@ -29,13 +29,37 @@
      
     </header>
 
-    <!-- intro with skills -->
+    <!-- intro avatar and text -->
 
-    <section class="intro">
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">Hi, my name is <strong>Olga</strong></h1>
+
+        <p class="section__subtitle section__subtitle--intro" id="element"></p>
+
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+        <script> var typed = new Typed('#element', {
+            strings: ['full-stack developer',],
+            typeSpeed: 100,
+            backSpeed: 100,
+            
+        });
+        </script>
+
+        <img src="images/avatar.png"  alt="Olga walking" height="250px" class="intro__img"/>
+    </section>
+
+
+    <!-- <section class="intro">
+        
+        <div class="avatar"><img src="images/avatar.png"/></div>
+
+      
         <div id="greeting"></div>
     
 
-<script>
+ <script>
     let fontSize = 45;
         if(window.screen.width < 600)
             fontSize = 20;
@@ -48,7 +72,7 @@
         "https://cdn.jsdelivr.net/npm/vara@1.4.0/fonts/Shadows-Into-Light/shadows-into-light.json",
         [
             {
-                    text: "Hello, my name is Olga. I am a full stack software developer.",                   
+                    text: "Hello, my name is Olga. I am a full-stack software engineer",                   
                     y: 20,                   
                     duration:5000
         },
@@ -76,8 +100,11 @@
     })
    
 
-</script>
-       
+</script> 
+</section> -->
+
+<section class="skills">
+
 <h2>My skills</h2>
         <div class="icons">
             
