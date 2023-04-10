@@ -110,28 +110,81 @@ header{
 
 /* intro */
 
-/* .intro{
-    display: flex;
-    flex-direction: column;
-    margin: 5em;
-    align-items: center;
-    justify-content: center;
+.section__title{
+    margin-bottom: 0.25em;
 }
 
-.avatar{
-    width: 150px;    
-} */
+.section__title--intro{
+    font-weight: var(--fw-reg);
+    
+}
 
-/* @media (min-width: 600px){
+/* display name on a separate line */
+.section__title--intro strong{
+    display: block;
+}
+
+.section__subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about{
+background: var(--clr-font);
+padding: .25em;
+margin-bottom: 1em;
+}
+
+.intro{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.section__subtitle--intro{
+    display: inline-block;
+}
+
+@media (min-width: 600px){
     .intro{
-        flex-direction: row;
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
     }
-    .avatar{
-        width: 250px;
+    .intro__img{
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
     }
-} */
 
-#greeting, #thankyounote{
+    /* positions dark stripe across the intro img aligns with the grid width */
+    .section__subtitle--intro{
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -2em;
+        width: calc(100% + 2em); 
+    }
+
+    .section__title--intro{
+        width: 100%;
+    }
+}
+
+
+
+#thankyounote{
    
     margin-top: 2em;
     margin-bottom: 5em;
@@ -140,9 +193,8 @@ header{
     overflow: hidden;
        
 }
-#greeting svg, #thankyounote svg{
-        width: 100%;
-            
+#thankyounote svg{
+        width: 100%;          
 }
 
 
@@ -337,75 +389,4 @@ button:hover{
     margin: 2em;
 }
 
-/* Intro */
-.section__title{
-    margin-bottom: 0.25em;
-}
 
-.section__title--intro{
-    font-weight: var(--fw-reg);
-    
-}
-
-/* display name on a separate line */
-.section__title--intro strong{
-    display: block;
-}
-
-.section__subtitle{
-    margin: 0;
-    font-size: var(--fs-h3);
-}
-
-.section__subtitle--intro,
-.section__subtitle--about{
-background: var(--clr-font);
-padding: .25em;
-margin-bottom: 1em;
-}
-
-.intro{
-    position: relative;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-
-
-.section__subtitle--intro{
-    display: inline-block;
-}
-
-@media (min-width: 600px){
-    .intro{
-        display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-        "img title"
-        "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
-    .intro__img{
-        grid-area: img;
-        min-width: 250px;
-        position: relative;
-        z-index: 2;
-    }
-
-    /* positions dark stripe across the intro img aligns with the grid width */
-    .section__subtitle--intro{
-        align-self: start;
-        grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: right;
-        position: relative;
-        left: -2em;
-        width: calc(100% + 2em); 
-    }
-
-    .section__title--intro{
-        width: 100%;
-    }
-}
