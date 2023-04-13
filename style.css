@@ -241,7 +241,8 @@ margin-bottom: 1em;
 
 .project_display{
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    
 }
 
 
@@ -249,21 +250,21 @@ margin-bottom: 1em;
 .project_display-item{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;    
-    border-radius: 5px;
-    margin: 3em 4em;
+    flex-wrap: wrap;        
+    border-radius: 5px;  
+    margin-bottom: 4em;
+    padding: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     background-color: var(--clr-accent);    
 }
 
 .project_display-image{
-    margin: 2em;   
+    display: block;
+    margin: 2em auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     overflow: hidden;
-    height: 180px;
-    width: 250px;
-    
-            
+     height: 150px;
+    width: 200px;          
 }
 
 .project_display-image:hover{
@@ -285,6 +286,10 @@ margin-bottom: 1em;
 
 .github-link{
     text-decoration: none;
+}
+
+#backtotop{
+    padding: 2em;
 }
 
 #backtotop:hover{
@@ -310,6 +315,8 @@ margin-bottom: 1em;
 
 .project_display-image{
    margin: 2em auto; 
+   height: 180px;
+    width: 250px; 
 }
 }
 
