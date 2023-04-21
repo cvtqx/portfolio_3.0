@@ -268,6 +268,39 @@ span.typed-cursor{
 }
 }
 
+/* resume */
+
+
+.resume{
+    margin: 10em auto;
+    padding-top: 12em;
+    height: 100vh;
+}
+
+.resume-icon{
+    margin-top: 5em;
+    margin-bottom: 5em; 
+    max-width: 30%;   
+}
+
+.resume img:hover{
+   transform: translate3d(3px,3px,3px);   
+}
+
+@media (min-width: 600px){
+    .resume{
+    margin: 3em auto;
+    padding-top: 3em;
+    height: 100vh;
+}
+
+.resume-icon{
+    margin-top: 5em;
+    margin-bottom: 5em; 
+    max-width: 10%;   
+}
+}
+
 
 /* projects */
 
