@@ -98,7 +98,8 @@ header{
     padding: 1em ;
     text-align: center;
     justify-content: center;
-    background-color: transparent;       
+    background-color: transparent; 
+    width: 7em;      
 }
 
 .reach_out a{
@@ -113,7 +114,15 @@ header{
 }
 
 .reach_out a:hover{
-    color: var(--clr-light);
+    color: var(--clr-light);    
+}
+
+/* fixed button */
+
+.fixed-btn .reach_out{
+    position: fixed;
+    background-color: var(--clr-dark);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
 }
 
 /* intro */
@@ -146,7 +155,6 @@ margin-bottom: 1em;
 }
 
 .intro{
-    position: relative;
     margin: 5em auto 0 auto; 
     height: 100vh;  
 }

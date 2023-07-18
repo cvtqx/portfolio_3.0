@@ -29,7 +29,7 @@
           <img src="images/logo.png" alt="" />
         </div>
      
-      <button class="reach_out"><a href="contact.html">Reach out to me</a></button>
+      <button class="reach_out" ><a href="contact.html">Reach out to me</a></button>
       
      
     </header>
@@ -211,5 +211,21 @@
         <p class="attribution">Unicons by <a href="https://iconscout.com/unicons">Iconscout</a></p>
        
     </footer> 
+    <script>
+        const reachOutButton = document.querySelector(".reach_out")
+        const topOfReachOutButton = reachOutButton.offsetTop;
+
+        function fixButton(){
+            //console.log(topOfReachOutButton, window.scrollY)
+
+            if(window.scrollY >= topOfReachOutButton){
+                document.body.classList.add('fixed-btn');
+            }else{
+                document.body.classList.remove('fixed-btn')
+            }
+        }
+
+        window.addEventListener('scroll', fixButton)
+    </script>
 </body>
 </html>
