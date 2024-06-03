@@ -1,244 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <title>Olga Yudkin - developer</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+      type="text/css" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet" />
 
+    <script
+      src="https://kit.fontawesome.com/54d3a5939b.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/vara@1.4.0/lib/vara.min.js"
+      type="text/javascript"></script>
+  </head>
 
-    <script src="https://kit.fontawesome.com/54d3a5939b.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vara@1.4.0/lib/vara.min.js" type="text/javascript"></script>
-</head>
-
-<body onLoad="window.scroll(0, 150)">
-
+  <body onLoad="window.scroll(0, 150)">
     <!-- header (logo+reach out button)-->
     <header>
-        
-        <div class="logo">
-          <img src="images/logo.png" alt="" />
-        </div>
-     
-      <button class="reach_out" ><a href="contact.html">Message me</a></button>
-      
-     
+      <div class="logo">
+        <img
+          src="images/logo.png"
+          alt="" />
+      </div>
+
+      <button class="reach_out"><a href="contact.html">Message me</a></button>
     </header>
 
     <!-- intro avatar and text -->
 
+    <section
+      class="intro"
+      id="top">
+      <h1 class="section__title section__title--intro">
+        Hi, my name is <strong>Olga</strong>
+      </h1>
 
-    <section class="intro" id="top">
-        
-        <h1 class="section__title section__title--intro">Hi, my name is <strong>Olga</strong></h1>
+      <p
+        class="section__subtitle section__subtitle--intro"
+        id="element"></p>
 
-        <p class="section__subtitle section__subtitle--intro" id="element"></p>
+      <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
 
-        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-
-        <script> var typed = new Typed('#element', {
-            strings: ['I am a full-stack developer'],
-            typeSpeed: 100,
-            
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['I am a full-stack developer'],
+          typeSpeed: 100,
         });
-        </script>
+      </script>
 
-        <img src="images/avatar.png"  alt="Olga avatar" height="250px" class="intro__img"/>
+      <img
+        src="images/avatar.png"
+        alt="Olga avatar"
+        height="250px"
+        class="intro__img" />
 
-        <!-- scroll button -->
+      <!-- scroll button -->
 
-         <div class="scrollButton">
-     
-        <a href="#section2" class="scrollIcon"><i class="fa-solid fa-arrow-down"></i></a>        
-                
-         </div>
+      <div class="scrollButton">
+        <a
+          href="#section2"
+          class="scrollIcon"
+          ><i class="fa-solid fa-arrow-down"></i
+        ></a>
+      </div>
     </section>
 
+    <!-- tool kit section -->
 
-
-
-  <!-- tool kit section -->
-
-
-<section class="skills" id="section2">
-
-<h2>My toolkit</h2>
-        <div class="icons">
-            
-                    <div><img src="images/icons/javascript.png" class="icon"/></div>
-                    <div><img src="images/icons/react.png" class="icon"/></div>
-                    <div><img src="images/icons/nodejs.png" class="icon"/></div>
-                    <div><img src="images/icons/express.png" class="icon"/></div>
-                    <div><img src="images/icons/css3.png" class="icon"/></div>
-                    <div><img src="images/icons/html.png" class="icon"/></div>
-                    <div><img src="images/icons/bootstrap.png" class="icon"/></div>
-                    <div><img src="images/icons/postgresql.png" class="icon"/></div>
-                    <div><img src="images/icons/git.png" class="icon"/></div>
-                    <div><img src="images/icons/mocha.png" class="icon"/></div>
-                </div>
+    <section
+      class="skills"
+      id="section2">
+      <h2>My toolkit</h2>
+      <div class="icons">
+        <div>
+          <img
+            src="images/icons/javascript.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
+            src="images/icons/react.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
+            src="images/icons/nodejs.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
+            src="images/icons/express.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
+            src="images/icons/css3.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
+            src="images/icons/html.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
+            src="images/icons/bootstrap.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
+            src="images/icons/postgresql.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
+            src="images/icons/git.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
+            src="images/icons/mocha.png"
+            class="icon" />
+        </div>
+      </div>
       <div class="scrollButton">
-     
-        <a href="#section3" class="scrollIcon"><i class="fa-solid fa-arrow-down"></i></a>        
-                
-        </div>         
-
+        <a
+          href="#section3"
+          class="scrollIcon"
+          ><i class="fa-solid fa-arrow-down"></i
+        ></a>
+      </div>
     </section>
 
     <!-- resume -->
 
-  <section class="resume" id="section3">
+    <section
+      class="resume"
+      id="section3">
+      <h2>My resume</h2>
 
-<h2>My resume</h2>
-
-        <div class="resume-icon">
-            
-                    <a href="images/Olga_Yudkin_resume.pdf"><img src="images/icons/resume.png" /></a>
-                    <p>Click to download</p>
-                   
-                </div>
+      <div class="resume-icon">
+        <a href="images/Olga_Yudkin_resume.pdf"
+          ><img src="images/icons/resume.png"
+        /></a>
+        <p>Click to download</p>
+      </div>
 
       <div class="scrollButton">
-     
-        <a href="#section4" class="scrollIcon"><i class="fa-solid fa-arrow-down"></i></a>        
-                
-        </div>         
-
+        <a
+          href="#section4"
+          class="scrollIcon"
+          ><i class="fa-solid fa-arrow-down"></i
+        ></a>
+      </div>
     </section>
 
     <!-- projects gallery -->
 
-    <section class="projects" id="section4">
-        <h2>My projects</h2>
-        <h4>(Click on any project's image to view the deployed version)</h4>
-<div class="project_display">
-   
-    <div class="project_display-item">
-        <h3 class="project_display-title">Restaurant Reservation System</h3>
-        <div class="project_display-image">
-            <a href="https://restaurant-reservation-frontend-vfda.onrender.com" target="_blank"><img src="images/project1.png"/></a>
+    <section
+      class="projects"
+      id="section4">
+      <h2>My projects</h2>
+      <h4>(Click on any project's image to view the deployed version)</h4>
+      <div class="project_display">
+        <div class="project_display-item">
+          <h3 class="project_display-title">Tip Calculator</h3>
+          <div class="project_display-image">
+            <a
+              href="https://cvtqx.github.io/tip-calculator-app/"
+              target="_blank"
+              ><img src="images/project9.png"
+            /></a>
+          </div>
+          <div class="project_display-description">
+            HTML | CSS | Javascript | Responsive design
+          </div>
+          <p>
+            <a
+              class="github-link"
+              href="https://github.com/cvtqx/tip-calculator-app"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Source code</a
+            >
+          </p>
         </div>
-        <div class="project_display-description">
-            React | Node.js | Express | PostgreSQL | Javascript</div>
-        <p>
-            <a class="github-link" href="https://github.com/cvtqx/restaurant-reservation-system" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
-        </p>
-    </div>
+        <div class="project_display-item">
+          <h3 class="project_display-title">Flags and Countries</h3>
+          <div class="project_display-image">
+            <a
+              href="https://countries-and-flags.onrender.com/"
+              target="_blank"
+              ><img src="images/project10.png"
+            /></a>
+          </div>
+          <div class="project_display-description">
+            React | CSS | Bootstrap | Responsive design
+          </div>
+          <p>
+            <a
+              class="github-link"
+              href="https://github.com/cvtqx/countries-and-flags"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Source code</a
+            >
+          </p>
+        </div>
+        <div class="project_display-item">
+          <h3 class="project_display-title">Restaurant Reservation System</h3>
+          <div class="project_display-image">
+            <a
+              href="https://restaurant-reservation-frontend-vfda.onrender.com"
+              target="_blank"
+              ><img src="images/project1.png"
+            /></a>
+          </div>
+          <div class="project_display-description">
+            React | Node.js | Express | PostgreSQL | Javascript
+          </div>
+          <p>
+            <a
+              class="github-link"
+              href="https://github.com/cvtqx/restaurant-reservation-system"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Source code</a
+            >
+          </p>
+        </div>
 
         <div class="project_display-item">
-        <h3 class="project_display-title">Instagram clone</h3>
-        <div class="project_display-image">
-            <a href="https://instaclone-nu-three.vercel.app" target="_blank"><img src="images/project8.png"/></a>
+          <h3 class="project_display-title">Instagram clone</h3>
+          <div class="project_display-image">
+            <a
+              href="https://instaclone-nu-three.vercel.app"
+              target="_blank"
+              ><img src="images/project8.png"
+            /></a>
+          </div>
+          <div class="project_display-description">React | Firebase</div>
+          <p>
+            <a
+              class="github-link"
+              href="https://github.com/cvtqx/instaclone"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Source code</a
+            >
+          </p>
         </div>
-        <div class="project_display-description">
-            React | Firebase </div>
-        <p>
-            <a class="github-link" href="https://github.com/cvtqx/instaclone" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
-        </p>
-    </div>
 
-    <div class="project_display-item">
-        <h3 class="project_display-title">Movie theater database</h3>
-        <div class="project_display-image">
-            <a href="https://welovemoviesproject-frontend.onrender.com" target="_blank"><img src="images/project2.png"/></a>
+        <div class="project_display-item">
+          <h3 class="project_display-title">Movie theater database</h3>
+          <div class="project_display-image">
+            <a
+              href="https://welovemoviesproject-frontend.onrender.com"
+              target="_blank"
+              ><img src="images/project2.png"
+            /></a>
+          </div>
+          <div class="project_display-description">
+            Node.js | Express | Javascript | PostgreSQL
+          </div>
+          <p>
+            <a
+              class="github-link"
+              href="https://github.com/cvtqx/WeLoveMovies"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Source code</a
+            >
+          </p>
         </div>
-        <div class="project_display-description"> Node.js | Express |  Javascript | PostgreSQL</div>
-        <p>
-            <a class="github-link" href="https://github.com/cvtqx/WeLoveMovies" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
-        </p>
-    </div>
-    <div class="project_display-item">
-        <h3 class="project_display-title">Recipe storing application</h3>
-        <div class="project_display-image">
-            <a href="https://recipe-app-sg71.onrender.com/" target="_blank"><img src="images/project3.png"/></a>
+        <div class="project_display-item">
+          <h3 class="project_display-title">Recipe storing application</h3>
+          <div class="project_display-image">
+            <a
+              href="https://recipe-app-sg71.onrender.com/"
+              target="_blank"
+              ><img src="images/project3.png"
+            /></a>
+          </div>
+          <div class="project_display-description">React | Javascript</div>
+          <p>
+            <a
+              class="github-link"
+              href="https://github.com/cvtqx/Recipe-tracking-app"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Source code</a
+            >
+          </p>
         </div>
-        <div class="project_display-description">React | Javascript</div>
-        <p>
-            <a class="github-link" href="https://github.com/cvtqx/Recipe-tracking-app" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
-        </p>
-    </div>
-    <div class="project_display-item">
-        <h3 class="project_display-title">Study tool with flashcards</h3>
-        <div class="project_display-image">
-            <a href="https://flashcard-app-react-rti1.onrender.com/" target="_blank"><img src="images/project4.png"/></a>
+        <div class="project_display-item">
+          <h3 class="project_display-title">Study tool with flashcards</h3>
+          <div class="project_display-image">
+            <a
+              href="https://flashcard-app-react-rti1.onrender.com/"
+              target="_blank"
+              ><img src="images/project4.png"
+            /></a>
+          </div>
+          <div class="project_display-description">
+            React | Javascript | Bootstrap | CSS
+          </div>
+          <p>
+            <a
+              class="github-link"
+              href="https://github.com/cvtqx/Flashcard-app"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Source code</a
+            >
+          </p>
         </div>
-        <div class="project_display-description">React | Javascript | Bootstrap | CSS</div>
-        <p>
-            <a class="github-link" href="https://github.com/cvtqx/Flashcard-app" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
-        </p>
-    </div>
-    <div class="project_display-item">
-        <h3 class="project_display-title">Encryption/ decryption tool</h3>
-        <div class="project_display-image">
-            <a href="https://cvtqx.github.io/decoder-ring/" target="_blank"><img src="images/project5.png"/></a>
+        <div class="project_display-item">
+          <h3 class="project_display-title">Encryption/ decryption tool</h3>
+          <div class="project_display-image">
+            <a
+              href="https://cvtqx.github.io/decoder-ring/"
+              target="_blank"
+              ><img src="images/project5.png"
+            /></a>
+          </div>
+          <div class="project_display-description">Javascript | HTML | CSS</div>
+          <p>
+            <a
+              class="github-link"
+              href="https://github.com/cvtqx/decoder-ring"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Source code</a
+            >
+          </p>
         </div>
-        <div class="project_display-description"> Javascript | HTML | CSS</div>
-        <p>
-            <a class="github-link" href="https://github.com/cvtqx/decoder-ring" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
-        </p>
-    </div>
-    <div class="project_display-item">
-        <h3 class="project_display-title">Vacation rentals webpage</h3>
-        <div class="project_display-image">
-            <a href="https://cvtqx.github.io/starter-thinkfulbnb/" target="_blank"><img src="images/project6.png"/></a>
+        <div class="project_display-item">
+          <h3 class="project_display-title">Vacation rentals webpage</h3>
+          <div class="project_display-image">
+            <a
+              href="https://cvtqx.github.io/starter-thinkfulbnb/"
+              target="_blank"
+              ><img src="images/project6.png"
+            /></a>
+          </div>
+          <div class="project_display-description">CSS | HTML</div>
+          <p>
+            <a
+              class="github-link"
+              href="https://github.com/cvtqx/starter-thinkfulbnb"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Source code</a
+            >
+          </p>
         </div>
-        <div class="project_display-description">  CSS | HTML</div>
-        <p>
-            <a class="github-link" href="https://github.com/cvtqx/starter-thinkfulbnb" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
-        </p>
-    </div>
-    <div class="project_display-item">
-        <h3 class="project_display-title">My portfolio</h3>
-        <div class="project_display-image">
-            <a href="https://www.olgayudkin.com/" target="_blank"><img src="images/project7.png"/></a>
+        <div class="project_display-item">
+          <h3 class="project_display-title">My portfolio</h3>
+          <div class="project_display-image">
+            <a
+              href="https://www.olgayudkin.com/"
+              target="_blank"
+              ><img src="images/project7.png"
+            /></a>
+          </div>
+          <div class="project_display-description">CSS | HTML | JS</div>
+          <p>
+            <a
+              class="github-link"
+              href="https://github.com/cvtqx/portfolio_3.0"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i> Source code</a
+            >
+          </p>
         </div>
-        <div class="project_display-description">  CSS | HTML | JS</div>
-        <p>
-            <a class="github-link" href="https://github.com/cvtqx/portfolio_3.0" target="_blank"><i class="fa-brands fa-github"></i> Source code</a>
-        </p>
-    </div>
-</div>
-<a href="#top" id="backtotop">Back to top</a>
+      </div>
+      <a
+        href="#top"
+        id="backtotop"
+        >Back to top</a
+      >
     </section>
 
-   <!-- footer -->
+    <!-- footer -->
 
-   <footer class="footer">
-        <ul class="social_list">
-            <li class="social_list__item">
-                <a class="social_list__link" href="https://github.com/cvtqx " target="_blank"><i class="fa-brands fa-github"></i></a></li>
-            <li class="social_list__item">
-                <a class="social_list__link" href="https://www.linkedin.com/in/olga-yudkin/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li class="social_list__item">
-                <a class="social_list__link" href="contact.html" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-        </ul>
-        <p>&copy; Olga Yudkin, 2023</p>
-        <p class="attribution">Unicons by <a href="https://iconscout.com/unicons">Iconscout</a></p>
-       
-    </footer> 
+    <footer class="footer">
+      <ul class="social_list">
+        <li class="social_list__item">
+          <a
+            class="social_list__link"
+            href="https://github.com/cvtqx "
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li class="social_list__item">
+          <a
+            class="social_list__link"
+            href="https://www.linkedin.com/in/olga-yudkin/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="social_list__item">
+          <a
+            class="social_list__link"
+            href="contact.html"
+            target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </li>
+      </ul>
+      <p>&copy; Olga Yudkin, 2023</p>
+      <p class="attribution">
+        Unicons by <a href="https://iconscout.com/unicons">Iconscout</a>
+      </p>
+    </footer>
     <script>
-        const reachOutButton = document.querySelector(".reach_out")
-        const topOfReachOutButton = reachOutButton.offsetTop;
+      const reachOutButton = document.querySelector('.reach_out');
+      const topOfReachOutButton = reachOutButton.offsetTop;
 
-        function fixButton(){
-            //console.log(topOfReachOutButton, window.scrollY)
+      function fixButton() {
+        //console.log(topOfReachOutButton, window.scrollY)
 
-            if(window.scrollY >= topOfReachOutButton){
-                document.body.classList.add('fixed-btn');
-            }else{
-                document.body.classList.remove('fixed-btn')
-            }
+        if (window.scrollY >= topOfReachOutButton) {
+          document.body.classList.add('fixed-btn');
+        } else {
+          document.body.classList.remove('fixed-btn');
         }
+      }
 
-        window.addEventListener('scroll', fixButton)
+      window.addEventListener('scroll', fixButton);
     </script>
-</body>
+  </body>
 </html>
