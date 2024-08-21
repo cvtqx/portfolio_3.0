@@ -54,10 +54,8 @@ section{
 img{
     display: block;
     max-width: 100%;
-    overflow: none;
-   
+    overflow: none;   
 }
-
 
 
 a{
@@ -132,6 +130,7 @@ header{
 }
 
 .section__title--intro{
+    margin-top: 5em;
     font-weight: var(--fw-reg);
     
 }
@@ -203,12 +202,11 @@ span.typed-cursor{
 /* skills */
 .skills{
     margin-top: 4em;
-    margin-bottom: 8em;
     height: 100vh;
 }
 
-.skills h2{
-    margin: 3em;
+.section__title--skills, .section__title--resume{
+    margin: 5em 3em;
 }
 
 .icons{
@@ -264,7 +262,12 @@ span.typed-cursor{
 
     .section__title--intro{
         width: 100%;
+         margin-top: 0;
     }
+
+    /* .section__title--toolkit, .section__title--resume{
+        margin-top: 3em;
+    } */
 
     .intro .scrollButton{
         grid-area: scroll;
@@ -286,7 +289,7 @@ span.typed-cursor{
 }
 
 .resume-icon{
-    margin-top: 5em;
+    margin-top: 2em;
     margin-bottom: 2em; 
     max-width: 30%; 
     display: block;  
@@ -319,7 +322,7 @@ span.typed-cursor{
 }
 
 .projects h2{
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom: 0;
     color: var(--clr-light);
 }
