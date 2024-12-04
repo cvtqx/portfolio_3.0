@@ -35,7 +35,7 @@
       type="text/javascript"></script>
   </head>
 
-  <body onLoad="window.scroll(0, 150)">
+  <body>
     <!-- header (logo+reach out button)-->
     <header>
       <div class="logo">
@@ -43,56 +43,49 @@
           src="images/logo.png"
           alt="" />
       </div>
-
+      <div class="nav-buttons">
+      <button class="my-projects"><a href="#section4">My projects</a></button>
+      <button class="my-resume"><a href="#section3">My resume</a></button>
       <button class="reach_out"><a href="contact.html">Message me</a></button>
+      </div>
     </header>
 
-    <!-- intro avatar and text -->
-
     <section
-      class="intro"
-      id="top">
-      <h1 class="section__title section__title--intro">
-        Hi, my name is <strong>Olga</strong>
-      </h1>
+      id="top"
+      class="first-section">
+      <!-- intro avatar and text -->
+      <div class="intro">
+        <h1 class="section__title section__title--intro">
+          Hi, my name is <strong>Olga</strong>
+        </h1>
 
-      <p
-        class="section__subtitle section__subtitle--intro"
-        id="element"></p>
+        <p
+          class="section__subtitle section__subtitle--intro"
+          id="element"></p>
 
-      <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
 
-      <script>
-        var typed = new Typed('#element', {
-          strings: ['I am a full-stack developer'],
-          typeSpeed: 100,
-        });
-      </script>
+        <script>
+          var typed = new Typed('#element', {
+            strings: ['I am a front end developer'],
+            typeSpeed: 100,
+          });
+        </script>
 
-      <img
-        src="images/avatar.png"
-        alt="Olga avatar"
-        height="250px"
-        class="intro__img" />
+        <img
+          src="images/avatar.png"
+          alt="Olga avatar"
+          height="250px"
+          class="intro__img" />
 
-      <!-- scroll button -->
-
-      <div class="scrollButton">
-        <a
-          href="#section2"
-          class="scrollIcon"
-          ><i class="fa-solid fa-arrow-down"></i
-        ></a>
       </div>
-    </section>
-
-    <!-- tool kit section -->
-
-    <section
-      class="skills"
-      id="section2">
-      <h2 class="section__title--skills">My toolkit</h2>
+      <!-- tech icons -->
       <div class="icons">
+        <div>
+          <img
+            src="images/icons/typescript.png"
+            class="icon" />
+        </div>
         <div>
           <img
             src="images/icons/javascript.png"
@@ -105,22 +98,17 @@
         </div>
         <div>
           <img
-            src="images/icons/nodejs.png"
+            src="images/icons/redux.png"
             class="icon" />
         </div>
         <div>
           <img
-            src="images/icons/express.png"
+            src="images/icons/nextjs.png"
             class="icon" />
         </div>
         <div>
           <img
-            src="images/icons/css3.png"
-            class="icon" />
-        </div>
-        <div>
-          <img
-            src="images/icons/html.png"
+            src="images/icons/tailwind-css.png"
             class="icon" />
         </div>
         <div>
@@ -130,7 +118,17 @@
         </div>
         <div>
           <img
+            src="images/icons/express.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
             src="images/icons/postgresql.png"
+            class="icon" />
+        </div>
+        <div>
+          <img
+            src="images/icons/mongodb.png"
             class="icon" />
         </div>
         <div>
@@ -144,13 +142,14 @@
             class="icon" />
         </div>
       </div>
-      <div class="scrollButton">
+       <!-- scroll button -->
+      <!-- <div class="scrollButton">
         <a
           href="#section3"
           class="scrollIcon"
           ><i class="fa-solid fa-arrow-down"></i
         ></a>
-      </div>
+      </div> -->
     </section>
 
     <!-- resume -->
@@ -165,14 +164,6 @@
           ><img src="images/icons/resume.png"
         /></a>
         <p>Click to download</p>
-      </div>
-
-      <div class="scrollButton">
-        <a
-          href="#section4"
-          class="scrollIcon"
-          ><i class="fa-solid fa-arrow-down"></i
-        ></a>
       </div>
     </section>
 
@@ -408,11 +399,13 @@
           </p>
         </div>
       </div>
+      <button class="back-to-top">
       <a
         href="#top"
         id="backtotop"
         >Back to top</a
       >
+      </button>
     </section>
 
     <!-- footer -->
@@ -454,12 +447,18 @@
       const topOfReachOutButton = reachOutButton.offsetTop;
 
       function fixButton() {
-        //console.log(topOfReachOutButton, window.scrollY)
 
         if (window.scrollY >= topOfReachOutButton) {
           document.body.classList.add('fixed-btn');
-        } else {
+        }         
+        else{
           document.body.classList.remove('fixed-btn');
+        }
+        // fix back-to-top button when scrolling past the first section
+        if(window.scrollY >= 1043.5 && window.scrollY < 4391){
+          document.body.classList.add('fixed-back-to-top-button')
+        } else{
+          document.body.classList.remove('fixed-back-to-top-button')
         }
       }
 
