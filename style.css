@@ -114,7 +114,8 @@ header button a:hover {
 /* fixed button */
 @media (max-width: 600px){
   .logo{
-    display: none;
+    visibility: hidden;
+    /* display:none; */
   }
   
    .fixed-btn .my-projects, .fixed-btn .my-resume {
