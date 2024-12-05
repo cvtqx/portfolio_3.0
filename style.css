@@ -114,8 +114,8 @@ header button a:hover {
 /* fixed button */
 @media (max-width: 600px){
   .logo{
-    visibility: hidden;
-    /* display:none; */
+    /* visibility: hidden; */
+    display:none;
   }
   
    .fixed-btn .my-projects, .fixed-btn .my-resume {
@@ -124,7 +124,9 @@ header button a:hover {
 
    header .nav-buttons{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    padding-left: .5em;
+    padding-right: .5em;      
    }
 
 }
