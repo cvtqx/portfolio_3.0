@@ -404,6 +404,12 @@ span.typed-cursor {
   margin-top: 3em;
 }
 
+.project_display-title span{
+  font-size:small;
+  display: block;
+  font-weight:100;
+}
+
 .github-link {
   text-decoration: none;
 }
