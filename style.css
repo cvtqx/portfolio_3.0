@@ -52,7 +52,8 @@ section {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   overflow: none;
 }
 
@@ -382,12 +383,13 @@ span.typed-cursor {
 }
 
 .project_display-image {
-  display: block;
+  
   margin: 2em auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: hidden;
   height: 150px;
   width: 200px;
+  object-fit: cover;
 }
 
 .project_display-image:hover {
@@ -441,7 +443,7 @@ span.typed-cursor {
 
   .project_display-image {
     margin: 2em auto;
-    height: 180px;
+    height: 188px;
     width: 250px;
   }
 }
