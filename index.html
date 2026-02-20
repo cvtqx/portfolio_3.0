@@ -480,7 +480,7 @@
           ></a>
         </li>
       </ul>
-      <p>&copy; Olga Yudkin, 2025</p>
+      <p>&copy; Olga Yudkin, <span id="year"></span></p>
       <p class="attribution">
         Unicons by <a href="https://iconscout.com/unicons">Iconscout</a>
       </p>
@@ -505,5 +505,8 @@
 
       window.addEventListener("scroll", fixButton);
     </script>
+    <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
   </body>
 </html>
